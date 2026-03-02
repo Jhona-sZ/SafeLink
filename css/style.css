@@ -257,24 +257,59 @@ body {
 /* TOP */
 .footer-top {
     display: none;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px;
 }
 .top__card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     width: 50%;
 }
-.footer-bottom{
-    margin: 20px 0;
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.footer__item {
+    list-style: none;
+}
+.footer__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.footer__link:hover {
+    color: #565d6d;
+    text-decoration: underline;
+}
+.footer-bottom {
+    /* margin-top: 20px; */
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+
+.bottom__text{
+    text-align: center;
 }
 
 /*** BREAKPOINTS 576, 768(quitar menu), 992(hacer mas grande), 1200 ***/
+
 /** BREAKPOINT 576px **/
 @media screen and (min-width: 576px) {
-    
+    .footer-top {
+        display: flex;
+    }
+    .footer-bottom {
+        margin-top: 20px;
+    }
 }
