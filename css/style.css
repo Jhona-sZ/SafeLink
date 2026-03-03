@@ -158,7 +158,7 @@ body {
     width: 50%;
 }
 .create__text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 20px;
     text-align: center;
     width: 70%;
@@ -166,7 +166,7 @@ body {
 
 .create__button {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: #565d6d;
     color: white;
     border: none;
@@ -236,6 +236,9 @@ body {
     margin: 15px 0;
     transition: transform 0.4s ease, box-shadow 0.3s ease;
     cursor: pointer;
+}
+.keys__subtitle{
+    font-size: 1.1rem;
 }
 
 .keys-card:hover {
@@ -354,10 +357,10 @@ body {
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .keys-card {
-        width: 380px;
+        width: 350px;
     }
 
     /* FOOTER */
@@ -371,5 +374,62 @@ body {
     .footer__cont {
         display: flex;
         align-items: flex-start;
+    }
+}
+
+/** BREAKPOINT 992px **/
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    .header__link {
+        font-size: 1rem;
+    }
+    .header__button {
+        font-size: 1rem;
+    }
+    /* MAIN */
+    .main {
+        grid-template-areas: 
+        "create create"
+        "works works"
+        "keys keys"
+        "ready ready";
+    }
+    .safe__title {
+        font-size: 1.4rem;
+    }
+    .create__text{
+        font-size: 1.1rem;
+    }
+
+    .create__button {
+        font-size: 1rem;
+    }
+    /* FUNCIONA */
+    .card {
+        width: 300px;
+        margin-bottom: 30px;
+        height: 228px;
+    }
+    .safe__mod {
+        font-size: 1rem;
+    }
+    /* KEYS */
+    .keys-card {
+        width: 220px;
+        height: 280px;
+    }
+    .keys__icon {
+        font-size: 0.9em;
+    }
+
+    /* FOOTER */
+    .top__text {
+        font-size: 0.9rem;
+    }
+     .footer__link {
+        font-size: 0.9rem;
+    }
+    .bottom__text {
+       font-size: 0.9rem;
     }
 }
