@@ -59,6 +59,11 @@ body {
     align-items: center;
     gap: 6px;
     font-size: 0.8rem;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+.header__link:hover {
+   transform: scale(1.01);
+   letter-spacing: 0.2px;
 }
 
 .header__button {
@@ -234,7 +239,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 15px 0;
-    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    transition: transform 0.8s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 .keys__subtitle{
@@ -243,7 +248,7 @@ body {
 
 .keys-card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(2px);
+    transform: translateY(2px) scale(1.01);
 }
 /** READY **/
 .ready {
@@ -286,7 +291,6 @@ body {
 }
 .footer__title {
     font-size: 1.1rem;
-    font-weight: normal;
     margin: 0;
 }
 .top__title {
@@ -361,6 +365,7 @@ body {
     }
     .keys-card {
         width: 350px;
+        height: 216.8px;
     }
 
     /* FOOTER */
@@ -386,6 +391,9 @@ body {
     .header__button {
         font-size: 1rem;
     }
+    .header__nav{
+        gap: 40px;
+    }
     /* MAIN */
     .main {
         grid-template-areas: 
@@ -409,18 +417,20 @@ body {
         width: 300px;
         margin-bottom: 30px;
         height: 228px;
+        transition: width 0.3s ease, height 0.3s ease;
     }
     .safe__mod {
         font-size: 1rem;
     }
     /* KEYS */
     .keys-card {
-        width: 220px;
+        width: 240px;
         height: 280px;
     }
     .keys__icon {
         font-size: 0.9em;
     }
+
 
     /* FOOTER */
     .top__text {
@@ -431,5 +441,53 @@ body {
     }
     .bottom__text {
        font-size: 0.9rem;
+    }
+}
+
+/* BREAKPOINT 1200px */
+@media screen and (min-width: 1200px) {
+    .header__title{
+        font-size: 1.8rem;
+    }
+    .safe__icon {
+        font-size: 1.5em;
+        transition: font-size 0.3s ease;
+    }
+    .safe__text {
+        font-size: 1rem;
+    }
+    .safe__title {
+        font-size: 1.5rem;
+    }
+    .safe__subtitle {
+        font-size: 1.2rem;
+    }
+    .create__text{
+        font-size: 1.2rem;
+    }
+
+    .create__button {
+        font-size: 1.1rem;
+    }
+    .keys-card {
+        width: 280px;
+        height: 290px;
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+    .keys__subtitle {
+        font-size: 1.2rem;
+    }
+    /* FOOTER */
+    .top__text {
+        font-size: 1rem;
+    }
+     .footer__link {
+        font-size: 1rem;
+    }
+    .footer__title {
+        font-size: 1.2rem;
+    }
+    .bottom__text {
+       font-size: 1rem;
     }
 }
