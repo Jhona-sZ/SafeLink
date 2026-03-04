@@ -394,6 +394,9 @@ body {
     .header__nav{
         gap: 40px;
     }
+    .shield__icon {
+        font-size: 1.5em;
+    }
     /* MAIN */
     .main {
         grid-template-areas: 
