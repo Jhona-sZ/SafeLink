@@ -145,6 +145,10 @@ body {
     "ready";
     background-color: #f3f3f3;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /** SECTION CREATE **/
 .create {

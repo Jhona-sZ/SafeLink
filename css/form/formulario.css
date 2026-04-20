@@ -1,0 +1,135 @@
+/* FORMULARIO */
+.formulario {
+    width: 100%;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.formulario__description {
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.formulario__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario__textarea {
+    width: 100%;
+    min-height: 140px;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.formulario__textarea:focus {
+    border-color: #3a3a5c;
+}
+
+.formulario__label {
+    font-size: 0.9rem;
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+.formulario__input {
+    width: 100%;
+    padding: 11px 12px;
+    background-color: #ffffff;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.formulario__input:focus {
+    border-color: #3a3a5c;
+}
+
+.formulario__textarea::placeholder, .formulario__input::placeholder {
+    color: #aaa;
+}
+.formulario__info {
+    font-size: 0.8rem;
+    color: red;
+    text-align: center;
+}
+.formulario__message {
+    font-size: 0.8rem;
+    color: #555;
+    text-align: center;
+}
+
+/* BREAKPOINT 576px */
+@media screen and (min-width: 576px) {
+    .formulario {
+        padding: 32px 24px;
+    }
+
+    .formulario__title {
+        font-size: 1.6rem;
+    }
+}
+
+/* BREAKPOINT 768px */
+@media screen and (min-width: 768px) {
+    .formulario {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    .formulario__title {
+        font-size: 1.8rem;
+    }
+
+    .formulario__textarea {
+        min-height: 160px;
+    }
+}
+
+/* BREAKPOINT 992px */
+@media screen and (min-width: 992px) {
+    .formulario {
+        max-width: 720px;
+        padding: 50px 0;
+        gap: 14px;
+    }
+
+    .formulario__title {
+        font-size: 2rem;
+    }
+
+    .formulario__description {
+        font-size: 1rem;
+    }
+}
+
+/* BREAKPOINT 1200px */
+@media screen and (min-width: 1200px) {
+    .formulario {
+        max-width: 880px;
+        padding: 60px 0;
+    }
+}
